@@ -4,17 +4,17 @@
 #include <linux/module.h>
 #include <linux/delay.h>
 
+#include <linux/kthread.h>
+
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yakuba D.");
 
-#define TIMES 5
+#define TIMES 15
+#define DELAY_MS 10 * 1000
 
-static int __init md_init(void)
+static int printTasks(void *arg)
 {
-    // replace xd
     struct task_struct *task;
-    int delayMS = 5000;
-
     size_t currentPrint = 1;
     while (currentPrint <= TIMES)
     {
@@ -22,20 +22,27 @@ static int __init md_init(void)
         printk(KERN_INFO "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME", currentPrint);
         for_each_process(task)
         {
-            printk(KERN_INFO "~~[TASK INFO]~~: name: %s, priority: %d, delay: %lld, runs: %lld (ticks)", task->comm, task->prio,
+            printk(KERN_INFO "~~[TASK INFO]~~: procID: %d, name: %s, priority: %d, delay: %lld, runs: %lld (ticks)", task->pid, task->comm, task->prio,
                    task->sched_info.run_delay, task->utime);
         }
 
         currentPrint++;
-        mdelay(delayMS);
+        mdelay(DELAY_MS);
     }
+
+    return 0;
+}
+
+static int __init md_init(void)
+{
+    kthread_run(printTasks, NULL, "taskPrintThread");
 
     return 0;
 }
 
 static void __exit md_exit(void)
 {
-    printk(KERN_INFO "Module goes away... It's his final message. If you won't replace the battery...\n");
+    printk(KERN_INFO "Module goes away... It's his final message.\n");
 }
 
 module_init(md_init);
