@@ -2,19 +2,31 @@
 #include <linux/init_task.h>
 #include <linux/kernel.h>
 #include <linux/module.h>
+#include <linux/delay.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yakuba D.");
 
+#define TIMES 5
+
 static int __init md_init(void)
 {
-    printk(KERN_INFO "Module init:\n");
-
     struct task_struct *task;
-    task = &init_task;
-    for_each_process(task)
+    int delayMS = 500;
+
+    size_t currentPrint = 1;
+    while (currentPrint <= TIMES)
     {
-        printk(KERN_INFO "~~[TASK INFO]~~ name: %s, priority: %d, delay: %lld", task->comm, task->prio, task->sched_info.run_delay);
+        task = &init_task;
+        printk(KERN_INFO "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %u TIME", currentPrint);
+        for_each_process(task)
+        {
+            printk(KERN_INFO "~~[TASK INFO]~~: name: %s, priority: %d, delay: %lld, runs: %lld (ticks)", task->comm, task->prio,
+                   task->sched_info.run_delay, task->utime);
+        }
+
+        currentPrint++;
+        mdelay(delayNS);
     }
 
     return 0;
