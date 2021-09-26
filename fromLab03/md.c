@@ -11,14 +11,15 @@ MODULE_AUTHOR("Yakuba D.");
 
 static int __init md_init(void)
 {
+    // replace xd
     struct task_struct *task;
-    int delayMS = 500;
+    int delayMS = 5000;
 
     size_t currentPrint = 1;
     while (currentPrint <= TIMES)
     {
         task = &init_task;
-        printk(KERN_INFO "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %u TIME", currentPrint);
+        printk(KERN_INFO "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME", currentPrint);
         for_each_process(task)
         {
             printk(KERN_INFO "~~[TASK INFO]~~: name: %s, priority: %d, delay: %lld, runs: %lld (ticks)", task->comm, task->prio,
@@ -26,7 +27,7 @@ static int __init md_init(void)
         }
 
         currentPrint++;
-        mdelay(delayNS);
+        mdelay(delayMS);
     }
 
     return 0;
