@@ -1,2 +1,2 @@
 # OperatinSystemsCursework
-OS Cursework xdd
+OS Coursework xdd
