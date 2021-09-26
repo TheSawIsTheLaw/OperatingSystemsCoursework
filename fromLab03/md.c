@@ -14,7 +14,7 @@ static int __init md_init(void)
     task = &init_task;
     for_each_process(task)
     {
-        printk(KERN_INFO "~~[TASK INFO]~~ name: %s, priority: %d", task->comm, task->prio);
+        printk(KERN_INFO "~~[TASK INFO]~~ name: %s, priority: %d, delay: %lld", task->comm, task->prio, task->sched_info.run_delay);
     }
 
     return 0;
