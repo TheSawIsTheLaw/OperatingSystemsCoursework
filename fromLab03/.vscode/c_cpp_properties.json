@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/lib/modules/5.13.19-2-MANJARO/build/arch/x86/include/",
+                "/usr/lib/modules/5.13.19-2-MANJARO/build/include/",
+                "/usr/lib/modules/5.13.19-2-MANJARO/build/arch/x86/include/generated/"
+            ],
+            "defines": [
+                "KBUILD_MODNAME=\"yakuba_module\"",
+                "__GNUC__",
+                "__KERNEL__"],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
