@@ -1,5 +1,6 @@
 ifneq ($(KERNELRELEASE),)
-	obj-m := md.o
+	obj-m := taskInfoGetter.o
+	taskInfoGetter-objs := md.o
 else
 	CURRENT = $(shell uname -r)
 	KDIR = /lib/modules/$(CURRENT)/build
@@ -16,7 +17,7 @@ clean:
 	@rm -rf .tmp_versions
 
 disclean: clean
-	@rm *.ko *.symvers
+	@rm *.ko *.symvers *.mod
 endif 
 
 # sudo insmod md.ko
