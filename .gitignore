@@ -1,2 +1,8 @@
 *.ko
 *.symvers
+src/OperatingSystemsCoursework.cflags
+src/OperatingSystemsCoursework.config
+src/OperatingSystemsCoursework.creator
+src/OperatingSystemsCoursework.cxxflags
+src/OperatingSystemsCoursework.files
+src/OperatingSystemsCoursework.includes
