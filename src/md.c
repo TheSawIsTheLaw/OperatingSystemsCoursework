@@ -22,7 +22,7 @@ static int printTasks(void *arg)
         printk(KERN_INFO "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME", currentPrint);
         for_each_process(task)
         {
-            printk(KERN_INFO "~~[TASK INFO]~~: procID: %d, name: %s, priority: %d, delay: %lld, runs: %lld (ticks)", task->pid, task->comm, task->prio,
+            printk(KERN_INFO "~~[TASK INFO]~~: procID: %5d, name: %15s, priority: %4d, delay: %30lld, runs: %30lld (ticks)", task->pid, task->comm, task->prio,
                    task->sched_info.run_delay, task->utime);
         }
 
