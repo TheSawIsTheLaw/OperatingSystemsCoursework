@@ -14,7 +14,7 @@ logger:
 	gcc starterLogger.c -Wall -Werror -o sl.exe
 
 clean:
-	@rm -f *.o .*.cmd .*.flags *.mod.c *.order
+	@rm -f *.o .*.cmd .*.flags *.mod.c *.order *.mod *.symvers
 	@rm -f .*.*.cmd *~ *.*~ TODO.*
 	@rm -fR .tmp*
 	@rm -rf .tmp_versions
