@@ -6,3 +6,13 @@ src/OperatingSystemsCoursework.creator
 src/OperatingSystemsCoursework.cxxflags
 src/OperatingSystemsCoursework.files
 src/OperatingSystemsCoursework.includes
+src/OperatingSystemsCoursework.creator.user
+
+*.aux
+*.out
+*.bbl
+*.blg
+*.toc
+
+*.exe
+
