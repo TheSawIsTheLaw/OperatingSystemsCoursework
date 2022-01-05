@@ -13,6 +13,9 @@ src/OperatingSystemsCoursework.creator.user
 *.bbl
 *.blg
 *.toc
+*.log
+
+*.vscode*
 
 *.exe
 
