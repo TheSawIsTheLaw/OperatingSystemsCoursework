@@ -31,6 +31,8 @@ static int printTasks(void *arg)
 
     char currentString[TEMP_STRING_SIZE];
 
+    int sumLen = 0;
+
     while (currentPrint <= TIMES)
     {
         task = &init_task;
@@ -38,9 +40,10 @@ static int printTasks(void *arg)
         memset(currentString, 0, TEMP_STRING_SIZE);
         snprintf(currentString, TEMP_STRING_SIZE, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME\n", currentPrint);
 
-        if (strlen(currentString) + strlen(log) >= LOG_SIZE)
+        sumLen = strlen(currentString) + strlen(log);
+        if (sumLen >= LOG_SIZE)
         {
-            printk(KERN_ERR "%s not enough space in log\n", PREFIX);
+            printk(KERN_ERR "%s not enough space in log (%d needed but %d accessible)\n", PREFIX, sumLen, LOG_SIZE);
 
             return -ENOMEM;
         }
@@ -88,9 +91,11 @@ int yaOpen(struct inode *spInode, struct file *spFile)
 
 ssize_t yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
 {
+    ssize_t logLen = strlen(log);
+
     printk(KERN_INFO "%s read called\n", PREFIX);
 
-    if (copy_to_user(buf, log, strlen(log)))
+    if (copy_to_user(buf, log, logLen))
     {
         printk(KERN_ERR "%s copy_to_user error\n", PREFIX);
 
@@ -99,7 +104,7 @@ ssize_t yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
 
     memset(log, 0, LOG_SIZE);
 
-    return 0;
+    return logLen;
 }
 
 ssize_t yaWrite(struct file *file, const char __user *buf, size_t len, loff_t *offp)
