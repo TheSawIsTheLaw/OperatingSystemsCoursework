@@ -12,24 +12,61 @@ MODULE_AUTHOR("Yakuba D.");
 #define TIMES 15
 #define DELAY_MS 10 * 1000
 
+static struct proc_dir_entry *procFile;
+
+#define LOG_SIZE 32768
+#define TEMP_STRING_SIZE 512
+
+static char log[LOG_SIZE] = { 0 };
+static int writeIndex = 0;
+
+#define PROC_FS_NAME "yakubaProcessAnalyzer"
+
+#define PREFIX "~~[TASK INFO]~~:"
+
 static int printTasks(void *arg)
 {
     struct task_struct *task;
     size_t currentPrint = 1;
+
+    char currentString[TEMP_STRING_SIZE];
+
     while (currentPrint <= TIMES)
     {
         task = &init_task;
-        printk(KERN_INFO "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME", currentPrint);
+
+        memset(currentString, 0, TEMP_STRING_SIZE);
+        snprintf(currentString, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME\n", currentPrint);
+
+        if (strlen(currentString) + strlen(log) >= LOG_SIZE)
+        {
+            printk(KERN_ERR "%s not enough space in log\n", PREFIX);
+
+            return -ENOMEM;
+        }
+
         for_each_process(task)
         {
-            if (rt_task(task)) {
-                printk(KERN_INFO "~~[TASK INFO]~~: procID: %-5d, name: %15s, prio: %4d, static_prio: %d, normal_prio (with "
-                             "scheduler policy): %d, realtime_prio: %d "
-                             "delay: %10lld, utime: %10lld (ticks), stime: %15lld (ticks)",
-                   task->pid, task->comm, task->prio, task->static_prio, task->normal_prio, task->rt_priority,
-                   task->sched_info.run_delay, task->utime, task->stime);
-                printk(KERN_INFO "Sched_rt_entity: timeout: %ld, watchdog_stamp: %ld, time_slice: %d", task->rt.timeout,
-                   task->rt.watchdog_stamp, task->rt.time_slice);
+            if (rt_task(task))
+            {
+                memset(currentString, 0, TEMP_STRING_SIZE);
+                snprintf(currentString,
+                         "procID: %-5d, name: %15s, prio: %4d, static_prio: %d, normal_prio (with "
+                         "scheduler policy): %d, realtime_prio: %d "
+                         "delay: %10lld, utime: %10lld (ticks), stime: %15lld (ticks)\n"
+                         "Sched_rt_entity: timeout: %ld, watchdog_stamp: %ld, time_slice: %d\n",
+                         task->pid, task->comm, task->prio, task->static_prio, task->normal_prio, task->rt_priority,
+                         task->sched_info.run_delay, task->utime, task->stime, task->rt.timeout,
+                         task->rt.watchdog_stamp, task->rt.time_slice);
+
+                if (strlen(currentString) + strlen(log) >= LOG_SIZE)
+                {
+                    printk(KERN_ERR "%s not enough space in log\n", PREFIX);
+
+                    return -ENOMEM;
+                }
+
+                strcat(log, currentString);
             }
         }
 
@@ -40,16 +77,68 @@ static int printTasks(void *arg)
     return 0;
 }
 
-static int __init md_init(void)
+int yaOpen(struct inode *spInode, struct file *spFile)
 {
-    kthread_run(printTasks, NULL, "taskPrintThread");
+    printk(KERN_INFO "%s open called\n", PREFIX);
+
+    try_module_get(THIS_MODULE);
 
     return 0;
 }
 
+int yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
+{
+    printk(KERN_INFO "%s read called\n", PREFIX);
+
+    if (copy_to_user(buf, log, strlen(log)))
+    {
+        printk(KERN_ERR "%s copy_to_user error\n", PREFIX);
+
+        return -EFAULT;
+    }
+
+    return 0;
+}
+
+int yaWrite(struct file *file, const char __user *buf, size_t len, loff_t *offp)
+{
+    printk(KERN_INFO "%s write called\n", PREFIX);
+
+    return 0;
+}
+
+int yaRelease(struct inode *spInode, struct file *spFile)
+{
+    printk(KERN_INFO "%s release called\n", PREFIX);
+
+    module_put(THIS_MODULE);
+
+    return 0;
+}
+
+static struct proc_ops fops = {proc_read : yaRead, proc_write : yaWrite, proc_open : yaOpen, proc_release : yaRelease};
+
+static int __init md_init(void)
+{
+    if (!(procFile = proc_create(PROC_FS_NAME, 0666, NULL, &fops)))
+    {
+        printk(KERN_ERR "%s proc_create error\n", PREFIX);
+
+        return -ENOMEM;
+    }
+
+    kthread_run(printTasks, NULL, "taskPrintThread");
+
+    printk(KERN_INFO "%s module loaded\n", PREFIX)
+
+        return 0;
+}
+
 static void __exit md_exit(void)
 {
-    printk(KERN_INFO "Module goes away... It's his final message.\n");
+    remove_proc_entry(PROC_FS_NAME, NULL);
+
+    printk(KERN_INFO "%s Module goes away... It's his final message.\n", PREFIX);
 }
 
 module_init(md_init);
