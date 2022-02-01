@@ -10,7 +10,7 @@
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yakuba D.");
 
-#define TIMES 15
+#define TIMES 5
 #define DELAY_MS 10 * 1000
 
 static struct proc_dir_entry *procFile;
@@ -33,6 +33,8 @@ static int printTasks(void *arg)
 
     int sumLen = 0;
 
+    printk("")
+
     while (currentPrint <= TIMES)
     {
         task = &init_task;
@@ -47,6 +49,8 @@ static int printTasks(void *arg)
 
             return -ENOMEM;
         }
+
+        strcat(log, currentString);
 
         for_each_process(task)
         {
