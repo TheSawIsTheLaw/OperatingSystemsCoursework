@@ -15,7 +15,7 @@ MODULE_AUTHOR("Yakuba D.");
 
 static struct proc_dir_entry *procFile;
 
-#define LOG_SIZE 32768
+#define LOG_SIZE 262144
 #define TEMP_STRING_SIZE 512
 
 static char log[LOG_SIZE] = { 0 };
@@ -54,10 +54,10 @@ static int printTasks(void *arg)
             {
                 memset(currentString, 0, TEMP_STRING_SIZE);
                 snprintf(currentString, TEMP_STRING_SIZE,
-                         "procID: %-5d, name: %15s, prio: %4d, static_prio: %d, normal_prio (with "
-                         "scheduler policy): %d, realtime_prio: %d "
-                         "delay: %10lld, utime: %10lld (ticks), stime: %15lld (ticks)\n"
-                         "Sched_rt_entity: timeout: %ld, watchdog_stamp: %ld, time_slice: %d\n",
+                         "procID: %-5d, name: %15s\nprio: %3d, static_prio: %3d, normal_prio (with "
+                         "scheduler policy): %3d, realtime_prio: %3d\n"
+                         "delay: %10lld\nutime: %10lld (ticks), stime: %15lld (ticks)\n"
+                         "Sched_rt_entity: timeout: %ld, watchdog_stamp: %ld, time_slice: %d\n\n",
                          task->pid, task->comm, task->prio, task->static_prio, task->normal_prio, task->rt_priority,
                          task->sched_info.run_delay, task->utime, task->stime, task->rt.timeout,
                          task->rt.watchdog_stamp, task->rt.time_slice);
