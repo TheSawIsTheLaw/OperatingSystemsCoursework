@@ -3,6 +3,7 @@
 #include <linux/init_task.h>
 #include <linux/kernel.h>
 #include <linux/module.h>
+#include <linux/proc_fs.h>
 
 #include <linux/kthread.h>
 
@@ -18,7 +19,6 @@ static struct proc_dir_entry *procFile;
 #define TEMP_STRING_SIZE 512
 
 static char log[LOG_SIZE] = { 0 };
-static int writeIndex = 0;
 
 #define PROC_FS_NAME "yakubaProcessAnalyzer"
 
@@ -36,7 +36,7 @@ static int printTasks(void *arg)
         task = &init_task;
 
         memset(currentString, 0, TEMP_STRING_SIZE);
-        snprintf(currentString, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME\n", currentPrint);
+        snprintf(currentString, TEMP_STRING_SIZE, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME\n", currentPrint);
 
         if (strlen(currentString) + strlen(log) >= LOG_SIZE)
         {
@@ -50,7 +50,7 @@ static int printTasks(void *arg)
             if (rt_task(task))
             {
                 memset(currentString, 0, TEMP_STRING_SIZE);
-                snprintf(currentString,
+                snprintf(currentString, TEMP_STRING_SIZE,
                          "procID: %-5d, name: %15s, prio: %4d, static_prio: %d, normal_prio (with "
                          "scheduler policy): %d, realtime_prio: %d "
                          "delay: %10lld, utime: %10lld (ticks), stime: %15lld (ticks)\n"
@@ -86,7 +86,7 @@ int yaOpen(struct inode *spInode, struct file *spFile)
     return 0;
 }
 
-int yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
+ssize_t yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
 {
     printk(KERN_INFO "%s read called\n", PREFIX);
 
@@ -97,10 +97,12 @@ int yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
         return -EFAULT;
     }
 
+    memset(log, 0, LOG_SIZE);
+
     return 0;
 }
 
-int yaWrite(struct file *file, const char __user *buf, size_t len, loff_t *offp)
+ssize_t yaWrite(struct file *file, const char __user *buf, size_t len, loff_t *offp)
 {
     printk(KERN_INFO "%s write called\n", PREFIX);
 
@@ -129,7 +131,7 @@ static int __init md_init(void)
 
     kthread_run(printTasks, NULL, "taskPrintThread");
 
-    printk(KERN_INFO "%s module loaded\n", PREFIX)
+    printk(KERN_INFO "%s module loaded\n", PREFIX);
 
         return 0;
 }
