@@ -7,6 +7,12 @@
 
 #include <linux/kthread.h>
 
+#define PROC_FS_NAME "yakubaProcessAnalyzer"
+
+#define PREFIX "~~[TASK INFO]~~:"
+
+#define TEMP_STRING_SIZE 512
+
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yakuba D.");
 
@@ -16,13 +22,21 @@ MODULE_AUTHOR("Yakuba D.");
 static struct proc_dir_entry *procFile;
 
 #define LOG_SIZE 262144
-#define TEMP_STRING_SIZE 512
-
 static char log[LOG_SIZE] = { 0 };
 
-#define PROC_FS_NAME "yakubaProcessAnalyzer"
+static int checkOverflow(char *fString, char *sString, int maxSize)
+{
+    int sumLen = strlen(fString) + strlen(sString);
 
-#define PREFIX "~~[TASK INFO]~~:"
+    if (sumLen >= maxSize)
+    {
+        printk(KERN_ERR "%s not enough space in log (%d needed but %d available)\n", PREFIX, sumLen, maxSize);
+
+        return -ENOMEM;
+    }
+
+    return 0;
+}
 
 static int printTasks(void *arg)
 {
@@ -31,10 +45,6 @@ static int printTasks(void *arg)
 
     char currentString[TEMP_STRING_SIZE];
 
-    int sumLen = 0;
-
-    printk("")
-
     while (currentPrint <= TIMES)
     {
         task = &init_task;
@@ -42,13 +52,8 @@ static int printTasks(void *arg)
         memset(currentString, 0, TEMP_STRING_SIZE);
         snprintf(currentString, TEMP_STRING_SIZE, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME\n", currentPrint);
 
-        sumLen = strlen(currentString) + strlen(log);
-        if (sumLen >= LOG_SIZE)
-        {
-            printk(KERN_ERR "%s not enough space in log (%d needed but %d accessible)\n", PREFIX, sumLen, LOG_SIZE);
-
+        if (checkOverflow(currentString, log, LOG_SIZE))
             return -ENOMEM;
-        }
 
         strcat(log, currentString);
 
@@ -60,18 +65,14 @@ static int printTasks(void *arg)
                 snprintf(currentString, TEMP_STRING_SIZE,
                          "procID: %-5d, name: %15s\nprio: %3d, static_prio: %3d, normal_prio (with "
                          "scheduler policy): %3d, realtime_prio: %3d\n"
-                         "delay: %10lld\nutime: %10lld (ticks), stime: %15lld (ticks)\n"
+                         "delay: %10lld\nutime: %1039lld (ticks), stime: %15lld (ticks)\n"
                          "Sched_rt_entity: timeout: %ld, watchdog_stamp: %ld, time_slice: %d\n\n",
                          task->pid, task->comm, task->prio, task->static_prio, task->normal_prio, task->rt_priority,
                          task->sched_info.run_delay, task->utime, task->stime, task->rt.timeout,
                          task->rt.watchdog_stamp, task->rt.time_slice);
 
-                if (strlen(currentString) + strlen(log) >= LOG_SIZE)
-                {
-                    printk(KERN_ERR "%s not enough space in log\n", PREFIX);
-
+                if (checkOverflow(currentString, log, LOG_SIZE))
                     return -ENOMEM;
-                }
 
                 strcat(log, currentString);
             }
@@ -84,7 +85,7 @@ static int printTasks(void *arg)
     return 0;
 }
 
-int yaOpen(struct inode *spInode, struct file *spFile)
+static int yaOpen(struct inode *spInode, struct file *spFile)
 {
     printk(KERN_INFO "%s open called\n", PREFIX);
 
@@ -93,7 +94,7 @@ int yaOpen(struct inode *spInode, struct file *spFile)
     return 0;
 }
 
-ssize_t yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
+static ssize_t yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
 {
     ssize_t logLen = strlen(log);
 
@@ -111,14 +112,14 @@ ssize_t yaRead(struct file *filep, char __user *buf, size_t count, loff_t *offp)
     return logLen;
 }
 
-ssize_t yaWrite(struct file *file, const char __user *buf, size_t len, loff_t *offp)
+static ssize_t yaWrite(struct file *file, const char __user *buf, size_t len, loff_t *offp)
 {
     printk(KERN_INFO "%s write called\n", PREFIX);
 
     return 0;
 }
 
-int yaRelease(struct inode *spInode, struct file *spFile)
+static int yaRelease(struct inode *spInode, struct file *spFile)
 {
     printk(KERN_INFO "%s release called\n", PREFIX);
 
@@ -135,7 +136,7 @@ static int __init md_init(void)
     {
         printk(KERN_ERR "%s proc_create error\n", PREFIX);
 
-        return -ENOMEM;
+        return -EFAULT;
     }
 
     kthread_run(printTasks, NULL, "taskPrintThread");
