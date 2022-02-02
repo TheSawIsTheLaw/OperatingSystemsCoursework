@@ -124,23 +124,112 @@
 
 В данном фрагменте можно увидеть, что в функции инициализации модуля требуется запустить отдельный поток для журналирования, так как в ином случае инициализация не будет завершена до окончания выполнения требующегося количества итераций сбора информации.
 
-\subsection{Модуль логирования процессов реального времени}
+\subsection{Программа загрузки модуля и получения информации}
+Программа загрузки модуля и вывода полученной информации должна включать в себя два системных вызова: загрузки и выгрузки модуля. Также требуется получить доступ к файлу, создаваемому модулем в procfs. Данное действие может быть произведено с использованием вызова cat.
+
+В листингах \ref{code:systemInsmod}--\ref{code:systemPopen} предоставлены фрагменты выполнения указанных вызовов.
+
+\begin{code}
+	\captionof{listing}{Загрузка модуля в систему.}
+	\label{code:systemInsmod}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\small,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=22,
+	lastline=22,
+	breaklines=true
+	]
+	{text}
+	{../../src/starterLogger.c}
+\end{code}
+
+\begin{code}
+	\captionof{listing}{Выгрузка модуля из системы.}
+	\label{code:systemRmmod}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\small,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=45,
+	lastline=45,
+	breaklines=true
+	]
+	{text}
+	{../../src/starterLogger.c}
+\end{code}
+
+\begin{code}
+	\captionof{listing}{Выполнения вызова cat.}
+	\label{code:systemPopen}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\small,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=26,
+	lastline=32,
+	breaklines=true
+	]
+	{text}
+	{../../src/starterLogger.c}
+\end{code}
+
+Функция popen в листинге \ref{code:systemPopen} открывает процесс, создавая канал, производя fork и вызывая командную оболочку. Возвращаемое значение данный функции -- это поток ввода-вывода. При этом будет возвращен NULL, если вызовы fork или pipe завершились ошибкой или если невозможно выделить необходимый для этого объем памяти.
 
 \subsection{Схемы работы модуля и дополнительного программного обеспечения}
-На рисунках \ref{fig:useCase}--\ref{fig:useCaseRepo} предоставлены примеры картинок.
+На рисунках \ref{fig:init}--\ref{fig:starterLogger} предоставлены схемы работы модуля и дополнительного программного обеспечения.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{img/useCase.png}
-	\caption{Какой-то пример. }
-	\label{fig:useCase}
+	\includegraphics[scale=0.5]{img/init.png}
+	\caption{Схема функции инициализации модуля.}
+	\label{fig:init}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{img/useCaseServer.png}
-	\caption{Вторая часть какого-то примера. }
-	\label{fig:useCaseRepo}
+	\includegraphics[scale=0.5]{img/exit.png}
+	\caption{Схема функции завершения работы модуля.}
+	\label{fig:exit}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/read.png}
+	\caption{Схема функции yaRead обработки чтения из /proc. }
+	\label{fig:read}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/printTasks.png}
+	\caption{Схема функции printTasks вывода информации о процессах реального времени. }
+	\label{fig:printTasks}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/starterLogger.png}
+	\caption{Схема работы программы загрузки модуля и получения информации. }
+	\label{fig:starterLogger}
 \end{figure}
 
 \subsubsection*{Вывод}
