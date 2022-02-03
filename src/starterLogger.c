@@ -11,7 +11,7 @@
 
 #define ERROR_COMMAND_EXEC 1
 
-#define TIMES 15
+#define TIMES 5
 #define DELAY 10
 
 int main(int argc, char *argv[])
@@ -20,6 +20,7 @@ int main(int argc, char *argv[])
     char log[SIZE_OF_LOG] = {'\0'};
 
     system("sudo insmod taskInfoGetter.ko");
+    
     for (int i = 0; i < TIMES; i++)
     {
         filePointer = popen("cat /proc/yakubaProcessAnalyzer", "r");

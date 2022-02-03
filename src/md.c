@@ -21,6 +21,8 @@ MODULE_AUTHOR("Yakuba D.");
 
 static struct proc_dir_entry *procFile;
 
+static struct struct task_struct *kthread;
+
 #define LOG_SIZE 262144
 static char log[LOG_SIZE] = { 0 };
 
@@ -139,16 +141,24 @@ static int __init md_init(void)
         return -EFAULT;
     }
 
-    kthread_run(printTasks, NULL, "taskPrintThread");
+    kthread = kthread_run(printTasks, NULL, "taskPrintThread");
+    if (IS_ERR(kthread))
+    {
+        printk(KERN_ERR "%s kthread_run error\n", PREFIX);
+
+        return -EFAULT;
+    }
 
     printk(KERN_INFO "%s module loaded\n", PREFIX);
 
-        return 0;
+    return 0;
 }
 
 static void __exit md_exit(void)
 {
     remove_proc_entry(PROC_FS_NAME, NULL);
+
+    kthread_stop(kthread);
 
     printk(KERN_INFO "%s Module goes away... It's his final message.\n", PREFIX);
 }
