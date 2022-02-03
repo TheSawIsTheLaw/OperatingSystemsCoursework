@@ -54,8 +54,7 @@ static int printTasks(void *arg)
         memset(currentString, 0, TEMP_STRING_SIZE);
         snprintf(currentString, TEMP_STRING_SIZE, "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: %lu TIME\n", currentPrint);
 
-        if (checkOverflow(currentString, log, LOG_SIZE))
-            return -ENOMEM;
+        checkOverflow(currentString, log, LOG_SIZE);
 
         strcat(log, currentString);
 
@@ -73,8 +72,7 @@ static int printTasks(void *arg)
                          task->sched_info.run_delay, task->utime, task->stime, task->rt.timeout,
                          task->rt.watchdog_stamp, task->rt.time_slice);
 
-                if (checkOverflow(currentString, log, LOG_SIZE))
-                    return -ENOMEM;
+                checkOverflow(currentString, log, LOG_SIZE);
 
                 strcat(log, currentString);
             }
