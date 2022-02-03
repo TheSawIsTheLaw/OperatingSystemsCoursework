@@ -16,12 +16,12 @@
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yakuba D.");
 
-#define TIMES 5
+#define TIMES 3
 #define DELAY_MS 10 * 1000
 
 static struct proc_dir_entry *procFile;
 
-static struct struct task_struct *kthread;
+static struct task_struct *kthread;
 
 #define LOG_SIZE 262144
 static char log[LOG_SIZE] = { 0 };
@@ -66,7 +66,7 @@ static int printTasks(void *arg)
                 snprintf(currentString, TEMP_STRING_SIZE,
                          "procID: %-5d, name: %15s\nprio: %3d, static_prio: %3d, normal_prio (with "
                          "scheduler policy): %3d, realtime_prio: %3d\n"
-                         "delay: %10lld\nutime: %1039lld (ticks), stime: %15lld (ticks)\n"
+                         "delay: %10lld\nutime: %10lld (ticks), stime: %15lld (ticks)\n"
                          "Sched_rt_entity: timeout: %ld, watchdog_stamp: %ld, time_slice: %d\n\n",
                          task->pid, task->comm, task->prio, task->static_prio, task->normal_prio, task->rt_priority,
                          task->sched_info.run_delay, task->utime, task->stime, task->rt.timeout,
@@ -155,8 +155,6 @@ static int __init md_init(void)
 static void __exit md_exit(void)
 {
     remove_proc_entry(PROC_FS_NAME, NULL);
-
-    kthread_stop(kthread);
 
     printk(KERN_INFO "%s Module goes away... It's his final message.\n", PREFIX);
 }

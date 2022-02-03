@@ -2,18 +2,95 @@
 В данном разделе...
 
 \subsection{Выбор и обоснование языка программирования и среды разработки}
-При написании программного продукта был использован язык программирования... 
+При написании программного кода использовался язык программирования C \cite{cLanguage}.
+
+В качестве среды разработки использовалась ``Visual Studio Code'' \cite{VSCode}.
 
 Данный выбор обусловлен следующими факторами:
 \begin{itemize}
-\item бла,
-\item бла,
-\item (голосом того парня из майнкрафта) БЛЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯЯ.
+\item наличие плагинов для написания программ, работающих на уровне ядра,
+\item широкий функционал,
+\item ПО с открытым исходным кодом.
 \end{itemize}
 
-При разработке использовалась среда... Данный выбор обусловлен тем, что...
+\subsection{Программа загрузки модуля и получения информации}
+В листинге \ref{code:starterLogger} предоставлена реализация программы загрузки модуля и получения информации.
 
-\subsection{Пример кода, да?}
+\begin{code}
+	\captionof{listing}{Программа загрузки модуля и получения информации.}
+	\label{code:starterLogger}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\small,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	%firstline=24,
+	%lastline=25,
+	breaklines=true
+	]
+	{text}
+	{../../src/starterLogger.c}
+\end{code}
+
+\subsection{Модуль логирования процессов реального времени}
+В листинге \ref{code:loggingModule} предоставлена реализация модуля логирования процессов реального времени.
+\newpage
+\begin{code}
+	\captionof{listing}{Модуль логирования процессов реального времени.}
+	\label{code:loggingModule}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\small,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	%firstline=24,
+	%lastline=25,
+	breaklines=true
+	]
+	{text}
+	{../../src/md.c}
+\end{code}
+
+\subsection{Makefile}
+В листинге \ref{code:Makefile} предоставлено содержание Makefile для сборки компонентов.
+
+\newpage
+\begin{code}
+	\captionof{listing}{Содержание Makefile.}
+	\label{code:Makefile}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\small,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	%firstline=24,
+	%lastline=25,
+	breaklines=true
+	]
+	{text}
+	{../../src/Makefile}
+\end{code}
+
+\subsection{Демонстрация работы}
+На рисунках \ref{img:firstIt}--\ref{img:thirdIt} предоставлена демонстрация работы программы загрузки модуля и получения информации.
+
+На рисунке \ref{img:dmesg} предоставлено содержание журнала ядра при загрузке и выгрузке модуля из системы.
+
 
 
 \subsection*{Вывод}
