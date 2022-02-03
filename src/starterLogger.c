@@ -11,7 +11,7 @@
 
 #define ERROR_COMMAND_EXEC 1
 
-#define TIMES 3
+#define TIMES 6
 #define DELAY 10
 
 int main(int argc, char *argv[])

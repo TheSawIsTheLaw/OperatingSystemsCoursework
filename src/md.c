@@ -16,7 +16,7 @@
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Yakuba D.");
 
-#define TIMES 3
+#define TIMES 6
 #define DELAY_MS 10 * 1000
 
 static struct proc_dir_entry *procFile;
