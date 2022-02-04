@@ -1,0 +1,1932 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: 1 TIME
+procID: 1    , name:         systemd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  138130107
+utime:  438871665 (ticks), stime:       668623232 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2    , name:        kthreadd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    3609028
+utime:          0 (ticks), stime:         6658578 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3    , name:          rcu_gp
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:      13017
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 4    , name:      rcu_par_gp
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:      29527
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 6    , name:    kworker/0:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:      24747
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 8    , name:    mm_percpu_wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:      18053
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 9    , name: rcu_tasks_kthre
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      10351
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 10   , name: rcu_tasks_rude_
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      11384
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 11   , name: rcu_tasks_trace
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     146608
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12   , name:     ksoftirqd/0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  338448973
+utime:          0 (ticks), stime:       133074752 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 13   , name:     rcu_preempt
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay: 1326589074
+utime:          0 (ticks), stime:       182166218 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 14   , name:          rcub/0
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:        659
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 15   , name:          rcuc/0
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:      14409
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 16   , name:     migration/0
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, realtime_prio:  99
+delay:      88173
+utime:          0 (ticks), stime:         1959626 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 17   , name:   idle_inject/0
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:     298286
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 19   , name:         cpuhp/0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    7114986
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 20   , name:         cpuhp/1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    5541003
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 21   , name:   idle_inject/1
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       7785
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 22   , name:     migration/1
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, realtime_prio:  99
+delay:     535028
+utime:          0 (ticks), stime:         6664869 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 23   , name:          rcuc/1
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:       7738
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 24   , name:     ksoftirqd/1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  787688528
+utime:          0 (ticks), stime:       380875008 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 26   , name:    kworker/1:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    1888854
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 27   , name:         cpuhp/2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 28   , name:   idle_inject/2
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       7685
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 29   , name:     migration/2
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, realtime_prio:  99
+delay:     125443
+utime:          0 (ticks), stime:         3331512 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 30   , name:          rcuc/2
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:       7685
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 31   , name:     ksoftirqd/2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  460544883
+utime:          0 (ticks), stime:       263180025 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 33   , name:    kworker/2:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    1741832
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 34   , name:         cpuhp/3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      92252
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 35   , name:   idle_inject/3
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       5968
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 36   , name:     migration/3
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, realtime_prio:  99
+delay:     181002
+utime:          0 (ticks), stime:         3332723 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 37   , name:          rcuc/3
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:       5968
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 38   , name:     ksoftirqd/3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 2015430255
+utime:          0 (ticks), stime:       375384447 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 40   , name:    kworker/3:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    2427398
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 41   , name:         cpuhp/4
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     300340
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 42   , name:   idle_inject/4
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       6718
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 43   , name:     migration/4
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, realtime_prio:  99
+delay:     106712
+utime:          0 (ticks), stime:         3332010 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 44   , name:          rcuc/4
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:       6718
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 45   , name:     ksoftirqd/4
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  390719744
+utime:          0 (ticks), stime:       239792347 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 47   , name:    kworker/4:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    2516706
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 48   , name:         cpuhp/5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    6472772
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 49   , name:   idle_inject/5
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       7412
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 50   , name:     migration/5
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, realtime_prio:  99
+delay:    2599133
+utime:          0 (ticks), stime:         3331684 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 51   , name:          rcuc/5
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:       7412
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 52   , name:     ksoftirqd/5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  556357536
+utime:          0 (ticks), stime:       266543652 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 54   , name:    kworker/5:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    1738415
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 55   , name:         cpuhp/6
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     606180
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 56   , name:   idle_inject/6
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       6932
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 57   , name:     migration/6
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, realtime_prio:  99
+delay:      58740
+utime:          0 (ticks), stime:         3332737 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 58   , name:          rcuc/6
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:       6932
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 59   , name:     ksoftirqd/6
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  422445657
+utime:          0 (ticks), stime:       323203248 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 61   , name:    kworker/6:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    2555046
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 62   , name:         cpuhp/7
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    3252044
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 63   , name:   idle_inject/7
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       5033
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 64   , name:     migration/7
+prio:   0, static_prio: 120, normal_prio (with scheduler policy):   0, realtime_prio:  99
+delay:      72397
+utime:          0 (ticks), stime:         3333333 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 65   , name:          rcuc/7
+prio:  98, static_prio: 120, normal_prio (with scheduler policy):  98, realtime_prio:   1
+delay:       5033
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 66   , name:     ksoftirqd/7
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  546650918
+utime:          0 (ticks), stime:       369879796 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 68   , name:    kworker/7:0H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    2122010
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 69   , name:       kdevtmpfs
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    4108334
+utime:          0 (ticks), stime:         6627054 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 70   , name:           netns
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 71   , name:    inet_frag_wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 72   , name:         kauditd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    9022537
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 73   , name:      khungtaskd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     803882
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 74   , name:      oom_reaper
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 75   , name:       writeback
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 76   , name:      kcompactd0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   74678357
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 77   , name:            ksmd
+prio: 125, static_prio: 125, normal_prio (with scheduler policy): 125, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 78   , name:      khugepaged
+prio: 139, static_prio: 139, normal_prio (with scheduler policy): 139, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 98   , name:     kintegrityd
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 99   , name:         kblockd
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 100  , name:  blkcg_punt_bio
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 101  , name:         ata_sff
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 102  , name:     edac-poller
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 103  , name:      devfreq_wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 104  , name:       watchdogd
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 106  , name:    kworker/0:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:   69131416
+utime:          0 (ticks), stime:       288261574 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 107  , name:           ksgxd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     161958
+utime:          0 (ticks), stime:        29968830 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 108  , name:         kswapd0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      49128
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 110  , name:        kthrotld
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 111  , name:  irq/122-aerdrv
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       2040
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 112  , name: irq/122-pcie-dp
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 113  , name:  irq/123-aerdrv
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       1493
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 114  , name: irq/123-pcie-dp
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:        802
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 121  , name: acpi_thermal_pm
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 124  , name:         nvme-wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 125  , name:   nvme-reset-wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 126  , name:  nvme-delete-wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 131  , name:             mld
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 132  , name:   ipv6_addrconf
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 135  , name:    kworker/7:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:   63404042
+utime:          0 (ticks), stime:       294672421 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 144  , name:           kstrp
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 149  , name:          zswap1
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 150  , name:          zswap1
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 151  , name:    zswap-shrink
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 153  , name: charger_manager
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 176  , name:    kworker/4:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:  102240133
+utime:          0 (ticks), stime:       445405415 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 194  , name:    kworker/1:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:   69501866
+utime:          0 (ticks), stime:       270434227 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 195  , name:    kworker/2:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:   60091993
+utime:          0 (ticks), stime:       260099512 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 199  , name: jbd2/nvme0n1p4-
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   85159991
+utime:          0 (ticks), stime:       702812931 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 200  , name: ext4-rsv-conver
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 203  , name:    kworker/5:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:   92803352
+utime:          0 (ticks), stime:       294254993 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 204  , name:    kworker/6:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:   87123829
+utime:          0 (ticks), stime:       337737885 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 213  , name:    kworker/3:1H
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:  144084741
+utime:          0 (ticks), stime:       637090759 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 264  , name: systemd-journal
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 3552561079
+utime: 179914619049 (ticks), stime:     80079335648 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 265  , name:   systemd-udevd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  246009163
+utime: 1029545319 (ticks), stime:        69162934 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 332  , name:        ktpacpid
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 333  , name:      tpm_dev_wq
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 344  , name:           loop0
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    1216226
+utime:          0 (ticks), stime:         9951617 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 345  , name:           loop1
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:       6063
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 347  , name:           loop2
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    2942549
+utime:          0 (ticks), stime:         6661223 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 369  , name:           loop3
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    1072067
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 371  , name:           loop4
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    1258567
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 373  , name:           loop5
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    3584997
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 376  , name:           loop6
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:    4740396
+utime:          0 (ticks), stime:         3324030 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 384  , name:        cfg80211
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 386  , name:    avahi-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   41865413
+utime:   46260707 (ticks), stime:        29759152 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 387  , name:           crond
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     493878
+utime:    6591288 (ticks), stime:         3333333 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 388  , name:     dbus-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  182530556
+utime: 5305628817 (ticks), stime:      1137014598 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 389  , name:  irq/135-mei_me
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       1501
+utime:          0 (ticks), stime:         3258533 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 390  , name:  NetworkManager
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   57839622
+utime:  387039501 (ticks), stime:       165350341 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 392  , name:         polkitd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   64657728
+utime:  168128926 (ticks), stime:       132101456 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 393  , name:           snapd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   19952106
+utime:   14686636 (ticks), stime:         6504350 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 394  , name:  systemd-logind
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   36622493
+utime:   43094847 (ticks), stime:        32760878 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 402  , name:    avahi-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     128143
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 427  , name:           cupsd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   13665742
+utime:    3198694 (ticks), stime:         6597022 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 429  , name:         influxd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  140985668
+utime: 1778582411 (ticks), stime:      1305191118 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 438  , name:            sddm
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    8623258
+utime:   22909198 (ticks), stime:         6384373 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 451  , name:    ModemManager
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   15945185
+utime:   56096745 (ticks), stime:        33102191 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 498  , name: irq/137-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:   25903976
+utime:          0 (ticks), stime:       938973697 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 499  , name: irq/138-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:    1813633
+utime:          0 (ticks), stime:       760043738 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 501  , name: irq/139-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:    1338637
+utime:          0 (ticks), stime:       128593121 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 502  , name: irq/140-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:     710061
+utime:          0 (ticks), stime:       465885998 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 503  , name: irq/141-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:     522281
+utime:          0 (ticks), stime:       129863687 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 504  , name: irq/142-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:     362305
+utime:          0 (ticks), stime:       126115979 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 505  , name: irq/143-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:     357633
+utime:          0 (ticks), stime:       166271748 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 506  , name: irq/144-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:     268473
+utime:          0 (ticks), stime:       173292916 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 507  , name: irq/145-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:    3265480
+utime:          0 (ticks), stime:       184473881 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 508  , name: irq/146-iwlwifi
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:       1348
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 537  , name:     card0-crtc0
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:    1246791
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 538  , name:     card0-crtc1
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:        533
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 539  , name:     card0-crtc2
+prio:  49, static_prio: 120, normal_prio (with scheduler policy):  49, realtime_prio:  50
+delay:        429
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 542  , name:          cryptd
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 901  , name:  wpa_supplicant
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    6415478
+utime:  162248668 (ticks), stime:        53093361 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 926  , name:            Xorg
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 5717920750
+utime: 83004409136 (ticks), stime:     78011811559 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1137 , name:   kworker/u17:2
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:  279996961
+utime:          0 (ticks), stime:      3347961705 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1138 , name:      bluetoothd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    4206286
+utime:   19887109 (ticks), stime:         6654852 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1308 , name:     sddm-helper
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      90706
+utime:   42876095 (ticks), stime:        19716371 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1310 , name:         systemd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    8598101
+utime:  272139441 (ticks), stime:        79512167 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1311 , name:        (sd-pam)
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1318 , name: appimagelaunche
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  154794929
+utime:  519478731 (ticks), stime:       443761438 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1323 , name:       kwalletd5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  655197377
+utime:  623505999 (ticks), stime:       191796695 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1324 , name: startplasma-x11
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      94266
+utime:   23060068 (ticks), stime:         3333333 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1332 , name:     dbus-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  147812263
+utime: 1081339061 (ticks), stime:       314717126 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1357 , name:   start_kdeinit
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1359 , name:       klauncher
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  447554497
+utime:  906898491 (ticks), stime:       523725908 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1377 , name:           kded5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  704351131
+utime: 2812331647 (ticks), stime:      1798500641 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1381 , name:        kwin_x11
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 2748497749
+utime: 113553693502 (ticks), stime:     45699381341 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1404 , name:   dconf-service
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:         3320123 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1421 , name:       ksmserver
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  530646817
+utime: 1036353750 (ticks), stime:       757896870 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1423 , name: kscreen_backend
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  629954295
+utime:  929737686 (ticks), stime:       563190008 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1424 , name:           obexd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:    3302035 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1428 , name:        krfcommd
+prio: 110, static_prio: 110, normal_prio (with scheduler policy): 110, realtime_prio:   0
+delay:       1189
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1433 , name:         upowerd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    4956262
+utime:  159073673 (ticks), stime:       105057361 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1443 , name: org_kde_powerde
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  645647140
+utime: 1028797715 (ticks), stime:       562291673 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1447 , name:     plasmashell
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 3185866148
+utime: 36210203077 (ticks), stime:     12715936255 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1450 , name:      baloo_file
+prio: 139, static_prio: 139, normal_prio (with scheduler policy): 139, realtime_prio:   0
+delay:  368637799
+utime:  740209937 (ticks), stime:       642751554 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1452 , name:         kaccess
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  851859877
+utime: 1156092383 (ticks), stime:       592288962 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1454 , name:  xembedsniproxy
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  610777381
+utime:  867980366 (ticks), stime:       377545173 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1456 , name: polkit-kde-auth
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  741771299
+utime: 1042897876 (ticks), stime:       426809403 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1461 , name:         udisksd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   17142908
+utime: 1221155639 (ticks), stime:       212458171 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1477 , name:     kdeconnectd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  757435669
+utime:  953421045 (ticks), stime:       608791251 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1481 , name: gmenudbusmenupr
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  707610800
+utime:  949591034 (ticks), stime:       545928587 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1487 , name: pamac-tray-plas
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  749470755
+utime: 1015639285 (ticks), stime:       519467915 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1498 , name:         yakuake
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1284118698
+utime: 14907375676 (ticks), stime:      3888268737 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1500 , name:           agent
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    3342042
+utime:          0 (ticks), stime:         3313996 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1507 , name:          matray
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  707159838
+utime:  509867243 (ticks), stime:       145510153 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1509 , name:    rtkit-daemon
+prio: 121, static_prio: 121, normal_prio (with scheduler policy): 121, realtime_prio:   0
+delay:     182104
+utime:          0 (ticks), stime:        12911669 (ticks)
+Sched_rt_entity: timeout: 1, watchdog_stamp: 4294880754, time_slice: 29
+
+procID: 1516 , name:   binfmt-bypass
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   45108593
+utime:  105020308 (ticks), stime:        19839560 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1567 , name:           gvfsd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    3070037
+utime:    9910979 (ticks), stime:         3323719 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1578 , name:      gvfsd-fuse
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    1772475
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1632 , name: at-spi-bus-laun
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    1785635
+utime:   13301568 (ticks), stime:         3240285 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1638 , name: jetbrains-toolb
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  552248023
+utime: 1745386229 (ticks), stime:       172120530 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1642 , name:               3
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   20522269
+utime:  621080238 (ticks), stime:        85988671 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1653 , name:     dbus-daemon
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  178525868
+utime:  872426959 (ticks), stime:       275240909 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1657 , name: at-spi2-registr
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 3714186216
+utime: 1343775144 (ticks), stime:      1269236728 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1658 , name: xdg-desktop-por
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   24755855
+utime:   26357272 (ticks), stime:        46235816 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1664 , name: xdg-document-po
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   15651624
+utime:   19876117 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1668 , name: xdg-permission-
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     349442
+utime:    3300765 (ticks), stime:         3300423 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1674 , name:      fusermount
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    1107161
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1685 , name: xdg-desktop-por
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  801309997
+utime: 1022940724 (ticks), stime:       482821248 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1690 , name:         dolphin
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  734072704
+utime: 1038753609 (ticks), stime:       463232891 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1714 , name:        pipewire
+prio: 109, static_prio: 109, normal_prio (with scheduler policy): 109, realtime_prio:   0
+delay:   14811339
+utime:   33205844 (ticks), stime:        13265395 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1715 , name: pipewire-media-
+prio: 109, static_prio: 109, normal_prio (with scheduler policy): 109, realtime_prio:   0
+delay:   12523707
+utime:   46398686 (ticks), stime:        72965066 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1898 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 7728192122
+utime: 87341457642 (ticks), stime:     18416455666 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1904 , name:             cat
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1905 , name:             cat
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      72721
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1907 , name: chrome_crashpad
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      27625
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1909 , name: chrome_crashpad
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1915 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:   13268824 (ticks), stime:         9982342 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1917 , name:     nacl_helper
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:    3316802 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1920 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   13807360
+utime:   13179500 (ticks), stime:       155214788 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1941 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 2413719559
+utime: 31438016321 (ticks), stime:      9472769184 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 1949 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  110199821
+utime:  981270860 (ticks), stime:       583384970 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2013 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  825623808
+utime: 1778513795 (ticks), stime:       174629921 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2025 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  108669847
+utime:  191700988 (ticks), stime:        32778857 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2050 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  387509465
+utime:  838329973 (ticks), stime:        72442006 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2064 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  729666281
+utime: 1719589397 (ticks), stime:       250634818 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2077 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  378770667
+utime:  626270229 (ticks), stime:        76024282 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2098 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  409221687
+utime:  491431109 (ticks), stime:        56047726 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2110 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  318546102
+utime:  487142351 (ticks), stime:        52981871 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2123 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  427474557
+utime:  491351135 (ticks), stime:        49495217 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2156 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  309801544
+utime:  436049077 (ticks), stime:        46095231 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2169 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  521394440
+utime:  914826512 (ticks), stime:       112287116 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2182 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   74933862
+utime:   92193688 (ticks), stime:        19776504 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2208 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  102765610
+utime:  812204490 (ticks), stime:        72872985 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2221 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1252758891
+utime: 3411062378 (ticks), stime:       425040830 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2234 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  104529561
+utime:  138699137 (ticks), stime:        29757380 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2247 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  964932487
+utime: 3129484025 (ticks), stime:       240592178 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2260 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   85049248
+utime:  102413881 (ticks), stime:        19573020 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2273 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  505631756
+utime:  560644852 (ticks), stime:        49550087 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2286 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  168193216
+utime:  302786618 (ticks), stime:        45901682 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2299 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   67773271
+utime:  109345635 (ticks), stime:        19938642 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2311 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1132684825
+utime: 2510144005 (ticks), stime:       177940152 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2337 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1040821843
+utime: 2433715077 (ticks), stime:       213591507 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2353 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  760735282
+utime:  941816383 (ticks), stime:       122374927 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2368 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  414016842
+utime:  305675807 (ticks), stime:        65914871 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2394 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  292202994
+utime:  290714685 (ticks), stime:        36357982 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2408 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  284350269
+utime:  407535807 (ticks), stime:        62636082 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2420 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  870552364
+utime: 2545142943 (ticks), stime:       204162334 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2434 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1270281024
+utime: 3471607438 (ticks), stime:       313345432 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2474 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  519332798
+utime: 3156628740 (ticks), stime:       350906807 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2512 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   27625121
+utime:          0 (ticks), stime:         3323199 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2533 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   68796615
+utime:   46275007 (ticks), stime:        16553825 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2546 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   92092862
+utime:  602195952 (ticks), stime:        55940960 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2559 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  100265470
+utime: 2278033319 (ticks), stime:       357482568 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2574 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1961918867
+utime: 8311532073 (ticks), stime:       787262328 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2610 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1043476984
+utime: 10797686125 (ticks), stime:      1419868869 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2625 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  168994311
+utime:  122459214 (ticks), stime:        23101923 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2640 , name: plasma-browser-
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 2217404592
+utime: 2850147861 (ticks), stime:      1069814420 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2641 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 3176573606
+utime: 293114130359 (ticks), stime:     40969049988 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2673 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  104485156
+utime:   62235498 (ticks), stime:         6644864 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2685 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   53596967
+utime:   78873506 (ticks), stime:         6617861 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2721 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   31182936
+utime:   59394150 (ticks), stime:        16510638 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2735 , name:         krunner
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1400435045
+utime: 3371000877 (ticks), stime:      1944177868 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2821 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   54443229
+utime:   52950285 (ticks), stime:        13173283 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2862 , name:     baloorunner
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  670787376
+utime: 1101668640 (ticks), stime:       562636128 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2877 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  525918936
+utime: 8861660200 (ticks), stime:       687618724 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2912 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  987160557
+utime: 1498705717 (ticks), stime:       154769580 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2925 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  128913696
+utime:  273395388 (ticks), stime:        49339490 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 2931 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  248044889
+utime:  683129368 (ticks), stime:        72275599 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3022 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  416788665
+utime:  327639045 (ticks), stime:        82466218 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3052 , name: InterceptorBrid
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   21268091
+utime:  165791117 (ticks), stime:        19878050 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3076 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   93274265
+utime:  203264344 (ticks), stime:        59338513 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3102 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  422206542
+utime: 2925307016 (ticks), stime:       565140112 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3117 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  548643011
+utime:  860276121 (ticks), stime:       184694393 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3185 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  208915440
+utime:  860708260 (ticks), stime:        82510572 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3199 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  486347420
+utime:  590653316 (ticks), stime:        69418818 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3213 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   48194794
+utime:  165207602 (ticks), stime:        43017119 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3262 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   55945942
+utime:  165799184 (ticks), stime:        29767913 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3263 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   55462287
+utime:   39774021 (ticks), stime:        16605276 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3293 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   20942723
+utime:   39620487 (ticks), stime:         9890644 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3319 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   31718152
+utime:   29749103 (ticks), stime:        23176002 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3320 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   20865977
+utime:   42899173 (ticks), stime:        19885867 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3331 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   41322169
+utime:   32834297 (ticks), stime:        23239029 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3356 , name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  589216876
+utime: 39943175491 (ticks), stime:      2550810201 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3498 , name:         dolphin
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 2225878444
+utime: 13135966480 (ticks), stime:      3265855923 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3570 , name:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1910029712
+utime: 4503107989 (ticks), stime:      1333937699 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3572 , name:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     144239
+utime:   13307422 (ticks), stime:         9959161 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3597 , name:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  192675843
+utime: 4469950928 (ticks), stime:      2091713900 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3608 , name:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     153414
+utime:   19939120 (ticks), stime:         9973574 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3726 , name:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   21659338
+utime:  289111645 (ticks), stime:        33278168 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3848 , name:       kioslave5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    1142935
+utime:   89521799 (ticks), stime:        66257387 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3956 , name:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   19429032
+utime: 4326451784 (ticks), stime:       941626094 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3959 , name:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      73612
+utime:          0 (ticks), stime:         3305454 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3988 , name:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3990 , name:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    5632365
+utime:          0 (ticks), stime:         3333333 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 3991 , name: gitstatusd-linu
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   22913988
+utime:   49619571 (ticks), stime:       138580971 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 4078 , name:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    6662165
+utime:  955201835 (ticks), stime:       179125587 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 4081 , name:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      35138
+utime:    3326563 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 4110 , name:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:          0
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 4112 , name:             zsh
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    4649269
+utime:          0 (ticks), stime:         3333333 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5433 , name: gvfs-udisks2-vo
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      45461
+utime:   23179959 (ticks), stime:        16457195 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5438 , name: gvfs-gphoto2-vo
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     105505
+utime:   13258846 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5442 , name: gvfs-mtp-volume
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     138351
+utime:    6635737 (ticks), stime:         3329542 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5446 , name: gvfs-afc-volume
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:       9818
+utime:    3312987 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5451 , name:     gvfsd-trash
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      96931
+utime:          0 (ticks), stime:         6632294 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5486 , name:     gvfsd-dnssd
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    9186187
+utime:   33023504 (ticks), stime:        23216795 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5495 , name:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  354011411
+utime: 16022698943 (ticks), stime:      1169087502 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5539 , name:            code
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   20425115
+utime: 1132953361 (ticks), stime:       122962039 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 5566 , name:        cpptools
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   13143360
+utime:   89755930 (ticks), stime:        96046051 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 6829 , name:   kworker/u16:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   74582727
+utime:          0 (ticks), stime:      1569562386 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 8347 , name:            kate
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1914697111
+utime: 55754947750 (ticks), stime:      5351423962 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 8499 , name:     kworker/2:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  335943810
+utime:          0 (ticks), stime:        85765429 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 8760 , name:     kworker/0:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     157368
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 8844 , name:   kworker/u17:1
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:  210184978
+utime:          0 (ticks), stime:      2995431285 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 9126 , name:         mplayer
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  987953771
+utime: 23284568624 (ticks), stime:      6024866610 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 9401 , name:   kworker/u16:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   82879307
+utime:          0 (ticks), stime:      1097119151 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 9953 , name:            kate
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  954418499
+utime:  582859239 (ticks), stime:       357263126 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 9972 , name:       kioslave5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    1197772
+utime:  112781284 (ticks), stime:        99381603 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 10009, name:    cpptools-srv
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   12393082
+utime:   23178397 (ticks), stime:        52722774 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 10366, name:     kworker/3:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay: 1412501492
+utime:          0 (ticks), stime:       640778844 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 10468, name:     kworker/7:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   58280738
+utime:          0 (ticks), stime:        13218802 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 10479, name:     kworker/5:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   60397991
+utime:          0 (ticks), stime:         9950993 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 10510, name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   28252043
+utime:  777502579 (ticks), stime:        82767726 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 11664, name:     kworker/2:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:       3656
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 11887, name:          chrome
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   49255288
+utime: 1245567029 (ticks), stime:       122777681 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12007, name:     kworker/5:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  192685826
+utime:          0 (ticks), stime:        26423381 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12042, name:     kworker/6:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:      30026
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12138, name:   kworker/u16:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   19097241
+utime:          0 (ticks), stime:       350025915 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12270, name:     kworker/7:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  129536982
+utime:          0 (ticks), stime:         6496338 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12274, name:  plasmawindowed
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  150945028
+utime: 5227783087 (ticks), stime:      1599113001 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12305, name:     kworker/4:1
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     242183
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12342, name:       kioslave5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    3322450
+utime:   29885380 (ticks), stime:         9964191 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12343, name:       kioslave5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    1829531
+utime:   13288528 (ticks), stime:         9965674 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12344, name:       kioslave5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:    2310500
+utime:   23258318 (ticks), stime:        13321633 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12349, name:       kioslave5
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:     850781
+utime:   29886094 (ticks), stime:        13277468 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12400, name:   kworker/u17:3
+prio: 100, static_prio: 100, normal_prio (with scheduler policy): 100, realtime_prio:   0
+delay:     149545
+utime:          0 (ticks), stime:               0 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12406, name:     kworker/0:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   78686075
+utime:          0 (ticks), stime:        23088633 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12605, name:     kworker/3:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  564564414
+utime:          0 (ticks), stime:       404226503 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12641, name:     kworker/1:2
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   75719280
+utime:          0 (ticks), stime:        39669188 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12711, name:     kworker/4:0
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   63689282
+utime:          0 (ticks), stime:         6608829 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+
+procID: 12730, name:      pulseaudio
+prio: 109, static_prio: 109, normal_prio (with scheduler policy): 109, realtime_prio:   0
+delay:   32746615
+utime:  421683399 (ticks), stime:       750512638 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_st

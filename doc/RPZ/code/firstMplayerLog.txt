@@ -1,0 +1,53 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: 1 TIME
+...
+procID: 9126 , name:         mplayer
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   99583422
+utime: 2398582148 (ticks), stime:       598783104 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+...
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: 2 TIME
+...
+procID: 9126 , name:         mplayer
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:   99753204
+utime: 2418484508 (ticks), stime:       598783104 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+...
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: 3 TIME
+...
+procID: 9126 , name:         mplayer
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  100071573
+utime: 2421817841 (ticks), stime:       608761366 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+...
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: 4 TIME
+...
+procID: 9126 , name:         mplayer
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  100179471
+utime: 2438474430 (ticks), stime:       618750383 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+...
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: 5 TIME
+...
+procID: 9126 , name:         mplayer
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  102045216
+utime: 2448470429 (ticks), stime:       622081494 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+...
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~: 6 TIME
+...
+procID: 9126 , name:         mplayer
+prio: 120, static_prio: 120, normal_prio (with scheduler policy): 120, realtime_prio:   0
+delay:  102484167
+utime: 2461786340 (ticks), stime:       625414827 (ticks)
+Sched_rt_entity: timeout: 0, watchdog_stamp: 0, time_slice: 30
+...

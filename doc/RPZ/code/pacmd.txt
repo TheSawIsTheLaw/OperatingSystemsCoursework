@@ -1,0 +1,16 @@
+index: 13
+        driver: <protocol-native.c>
+        owner module: 12
+        properties:
+                application.name = "ALSA plug-in [mplayer]"
+                native-protocol.peer = "UNIX socket client"
+                native-protocol.version = "35"
+                application.process.id = "9126"
+                application.process.user = "trvehazzk3r"
+                application.process.host = "trvehazzk3r"
+                application.process.binary = "mplayer"
+                application.language = "C"
+                window.x11.display = ":0"
+                application.process.machine_id = "b8d7673a22fe4ef6a2deb9f23ce0eafe"
+                application.process.session_id = "1"
+                application.icon_name = "mplayer"

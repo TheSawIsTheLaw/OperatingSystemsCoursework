@@ -60,22 +60,22 @@ static int printTasks(void *arg)
 
         for_each_process(task)
         {
-            // if (task_is_realtime(task))
-            // {
-            memset(currentString, 0, TEMP_STRING_SIZE);
-            snprintf(currentString, TEMP_STRING_SIZE,
-                     "procID: %-5d, name: %15s\nprio: %3d, static_prio: %3d, normal_prio (with "
-                     "scheduler policy): %3d, realtime_prio: %3d\n"
-                     "delay: %10lld\nutime: %10lld (ticks), stime: %15lld (ticks)\n"
-                     "Sched_rt_entity: timeout: %ld, watchdog_stamp: %ld, time_slice: %d\n\n",
-                     task->pid, task->comm, task->prio, task->static_prio, task->normal_prio, task->rt_priority,
-                     task->sched_info.run_delay, task->utime, task->stime, task->rt.timeout,
-                     task->rt.watchdog_stamp, task->rt.time_slice);
+            if (task_is_realtime(task))
+            {
+                memset(currentString, 0, TEMP_STRING_SIZE);
+                snprintf(currentString, TEMP_STRING_SIZE,
+                         "procID: %-5d, name: %15s\nprio: %3d, static_prio: %3d, normal_prio (with "
+                         "scheduler policy): %3d, realtime_prio: %3d\n"
+                         "delay: %10lld\nutime: %10lld (ticks), stime: %15lld (ticks)\n"
+                         "Sched_rt_entity: timeout: %ld, watchdog_stamp: %ld, time_slice: %d\n\n",
+                         task->pid, task->comm, task->prio, task->static_prio, task->normal_prio, task->rt_priority,
+                         task->sched_info.run_delay, task->utime, task->stime, task->rt.timeout,
+                         task->rt.watchdog_stamp, task->rt.time_slice);
 
-            checkOverflow(currentString, log, LOG_SIZE);
+                checkOverflow(currentString, log, LOG_SIZE);
 
-            strcat(log, currentString);
-            // }
+                strcat(log, currentString);
+            }
         }
 
         currentPrint++;
@@ -161,3 +161,4 @@ static void __exit md_exit(void)
 
 module_init(md_init);
 module_exit(md_exit);
+
