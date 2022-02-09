@@ -1,8 +1,8 @@
-\section*{ПРИЛОЖЕНИЕ 1}
-\addcontentsline{toc}{section}{ПРИЛОЖЕНИЕ 1}
+\section*{ПРИЛОЖЕНИЕ А. Исходный код программы}
+\addcontentsline{toc}{section}{ПРИЛОЖЕНИЕ А. Исходный код программы}
 
 \begin{code}
-	\captionof{listing}{Структура ядра task\_struct}
+	\captionof{listing}{Содержимое файла md.c}
 	\inputminted
 	[
 	frame=single,
@@ -18,8 +18,27 @@
 	breaklines=true
 	]
 	{text}
-	{code/task_struct.h}
+	{../../src/md.c}
 \end{code}
 
+\begin{code}
+	\captionof{listing}{Содержимое файла starterLogger.c}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\small,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	%firstline=24,
+	%lastline=25,
+	breaklines=true
+	]
+	{text}
+	{../../src/starterLogger.c}
+\end{code}
 
 \pagebreak

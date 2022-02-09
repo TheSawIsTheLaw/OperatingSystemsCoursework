@@ -1,7 +1,6 @@
 \section{Технологический раздел}
-В данном разделе представлен выбор языка программирования и среды разработки, а также листинг реализованных компонентов. Также приведена демонстрация работы.
 
-\subsection{Выбор и обоснование языка программирования и среды разработки}
+\subsection{Выбор и обоснование языка и среды программирования}
 При написании программного кода использовался язык программирования C \cite{cLanguage}.
 
 В качестве среды разработки использовалась ``Visual Studio Code'' \cite{VSCode}.
@@ -10,38 +9,13 @@
 \begin{itemize}
 \item наличие плагинов для написания программ, работающих на уровне ядра,
 \item широкий функционал,
-\item ПО с открытым исходным кодом.
+\item программное обеспечение с открытым исходным кодом.
 \end{itemize}
 
-\subsection{Программа загрузки модуля и получения информации}
-В листинге \ref{code:starterLogger} предоставлена реализация программы загрузки модуля и получения информации.
-
+\subsection{Реализация алгоритмов определения и логирования приоритетов, времени выполнения и простоя процессов.}
+В листинге \ref{code:loggingModule} предоставлена реализация алгоритмов определения и логирования приоритетов, времени выполнения и простоя процессов.
 \begin{code}
-	\captionof{listing}{Программа загрузки модуля и получения информации.}
-	\label{code:starterLogger}
-	\inputminted
-	[
-	frame=single,
-	framerule=0.5pt,
-	framesep=20pt,
-	fontsize=\small,
-	tabsize=4,
-	linenos,
-	numbersep=5pt,
-	xleftmargin=10pt,
-	%firstline=24,
-	%lastline=25,
-	breaklines=true
-	]
-	{text}
-	{../../src/starterLogger.c}
-\end{code}
-
-\subsection{Модуль логирования процессов реального времени}
-В листинге \ref{code:loggingModule} предоставлена реализация модуля логирования процессов реального времени.
-\newpage
-\begin{code}
-	\captionof{listing}{Модуль логирования процессов реального времени.}
+	\captionof{listing}{Реализация алгоритмов определения и логирования приоритетов, времени выполнения и простоя процессов.}
 	\label{code:loggingModule}
 	\inputminted
 	[
@@ -53,18 +27,41 @@
 	linenos,
 	numbersep=5pt,
 	xleftmargin=10pt,
-	%firstline=24,
-	%lastline=25,
+	firstline=43,
+	lastline=113,
 	breaklines=true
 	]
 	{text}
 	{code/oldMd.c}
 \end{code}
 
+\subsection{Реализация алгоритма предоставления информации о процессах пользователю}
+В листинге \ref{code:starterLogger} предоставлена реализация алгоритма предоставления информации о приоритетах, времени выполнения и простоя процессов пользователю.
+
+\begin{code}
+	\captionof{listing}{Реализация алгоритма предоставления информации о приоритетах, времени выполнения и простоя процессов пользователю.}
+	\label{code:starterLogger}
+	\inputminted
+	[
+	frame=single,
+	framerule=0.5pt,
+	framesep=20pt,
+	fontsize=\small,
+	tabsize=4,
+	linenos,
+	numbersep=5pt,
+	xleftmargin=10pt,
+	firstline=17,
+	lastline=48,
+	breaklines=true
+	]
+	{text}
+	{../../src/starterLogger.c}
+\end{code}
+
 \subsection{Makefile}
 В листинге \ref{code:Makefile} предоставлено содержание Makefile для сборки компонентов.
 
-\newpage
 \begin{code}
 	\captionof{listing}{Содержание Makefile.}
 	\label{code:Makefile}
@@ -118,8 +115,3 @@
 	\caption{Содержание журнала ядра. }
 	\label{fig:dmesg}
 \end{figure}
-
-\subsection*{Вывод}
-В качестве средств реализации был выбран язык программирования C. Используемая среда разработки -- ``Visual Studio Code''.
-
-Были реализованы модуль логирования процессов реального времени и программа загрузки модуля и получения информации, представлены их листинги. Была проведена демонстрация работы реализованного программного обеспечения.
